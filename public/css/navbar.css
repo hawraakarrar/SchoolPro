@@ -1,0 +1,228 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    }
+   header{
+    background-color: #3421c0;
+    color:white !important;
+  
+    }
+   
+    ul li a{
+        color: white;
+        text-decoration: none;
+        box-sizing: border-box;
+    }
+    .containers{
+        width:100%;
+        display:flex;
+        position: relative;
+        
+    }
+    .aside{
+        position:absolute;
+        width:15%;
+        height:100vh;
+        background:#3421c0;
+        color:white;
+        transition: all 0.3s ease;
+        right:0;
+        padding-top: 10px;
+        z-index: 10;
+     }
+     .aside ul {
+        list-style: none;
+        padding: 0;
+        width: 100%;
+       text-align: center;
+     }
+    
+     .aside ul li a{
+        display:block;
+        color:#fff;
+        position: relative;
+        margin-bottom: 1px;
+        padding:8px;
+        margin-bottom: 1px;
+        direction:rtl;
+        text-decoration: none;
+        outline: none;
+     }
+     .aside ul li a i{
+       margin-left: 10px;
+     }
+     .aside ul li a:before{
+        content: "";
+        position: absolute;
+        top:0;
+        right:0;
+        width:3px;
+        height:100%;
+        background:#3421c0;
+        z-index:-1;
+        }
+    
+    .aside ul li a span.icon{
+            display: inline-block;
+            font-size:20px;
+    }
+    .aside ul li a span.title{
+            display: inline-block;
+            font-size:20px;
+      
+    }
+    .resize{
+        width:70px;
+        height:100vh;
+    }
+  
+    .resize span{
+    display:none;
+    }
+    .resize ul li a span.icon{
+        font-size:20px;
+    }
+    .resize ul li a span.title{
+        display:none;
+    }
+    .aside ul li a:hover,
+    .aside ul li a:focus,
+    .aside ul li a:active{
+        background-color: rgba(255, 255, 255, 0.123);
+        color:#fff;
+    }
+
+
+   header  ul li{
+        color:#fff;
+        font-size:18px;
+    }
+
+    header  ul li a:hover{
+        color:#fff;
+    }
+.arrow1{
+    background:white;
+    width:40px;
+    height:40px;
+    z-index:2;
+    left:-30px;
+    top:-8px;
+    position:absolute;
+    text-align:center;
+    line-height:40px;
+    border:1px solid #fff;
+    border-radius:50%;
+    color:#3421c0
+}
+    
+.arrow2{
+    background:white;
+    width:40px;
+    height:40px;
+    z-index:1;
+    left:-30px;
+    top:-8px;
+    position:absolute;
+    text-align:center;
+    line-height:40px;
+    border:1px solid #fff;
+    border-radius:50%;
+    color:#3421c0
+}
+
+
+
+@media screen and (max-width: 1000px) {
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    }
+    .containers{
+        width:100%;
+        display:flex;
+        position: relative;
+    }
+header ul li a{
+    font-size: 14px;
+}
+
+.aside{
+    position:absolute;
+    width:35%;
+    height:100vh;
+    background:#3421c0;
+    color:white;
+    transition: all 0.3s ease;
+    right:0;
+    padding-top: 10px;
+    z-index: 10;
+ }
+
+ 
+ .aside ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    height:auto;
+ }
+ .aside ul li a{
+    display:block;
+    color:#fff;
+    position: relative;
+    margin-bottom: 1px;
+    padding:8px;
+    margin-bottom: 1px;
+    direction:rtl;
+    text-decoration: none;
+    outline: none;
+ }
+ .aside ul li a i{
+   margin-left: 5px;
+
+ }
+ .aside ul li a:before{
+    content: "";
+    position: absolute;
+    top:0;
+    right:0;
+    width:2px;
+    height:100%;
+    background:#3421c0;
+    z-index:-1;
+    }
+
+.aside ul li a span.icon{
+        display: inline-block;
+        font-size:20px;
+}
+.aside ul li a span.title{
+        display: inline-block;
+        font-size:16px;
+  
+}
+.aside ul li a:hover,
+.aside ul li a:focus,
+.aside ul li a:active{
+    background-color: rgba(255, 255, 255, 0.123);
+    color:#fff;
+}
+.resize{
+    width:70px;
+    height:auto;
+}
+.resize span{
+display:none;
+}
+.resize ul li a span.icon{
+    font-size:20px;
+}
+.resize ul li a span.title{
+    display:none;
+}
+  }
+  
